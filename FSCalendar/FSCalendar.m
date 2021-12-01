@@ -1126,6 +1126,22 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     [self.transitionCoordinator handleScopeGesture:sender];
 }
 
+- (void)setCollectionLayoutSectionInsets:(UIEdgeInsets)inset
+{
+    self.collectionViewLayout.sectionInsets = inset;
+}
+
+- (void)setContentViewFrame:(CGRect)frame
+{
+    self.contentView.frame = frame;
+}
+
+- (void)clearTransitionCoordinatorCachedMonthSize
+{
+    self.transitionCoordinator.cachedMonthSize = CGSizeZero;
+}
+
+
 #pragma mark - Private methods
 
 - (void)scrollToDate:(NSDate *)date

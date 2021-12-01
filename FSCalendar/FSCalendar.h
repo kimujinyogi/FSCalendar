@@ -510,6 +510,12 @@ IB_DESIGNABLE
  */
 - (void)handleScopeGesture:(UIPanGestureRecognizer *)sender;
 
+- (void)setCollectionLayoutSectionInsets:(UIEdgeInsets)inset;
+
+- (void)setContentViewFrame:(CGRect)frame;
+
+- (void)clearTransitionCoordinatorCachedMonthSize;
+
 @end
 
 
