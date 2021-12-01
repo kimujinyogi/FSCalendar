@@ -741,6 +741,12 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 
 }
 
+- (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier
+{
+    [self.collectionView registerNib:nib
+          forCellWithReuseIdentifier:identifier];
+}
+
 - (FSCalendarCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier forDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)position;
 {
     if (!identifier.length) {

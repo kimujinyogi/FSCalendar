@@ -453,6 +453,8 @@ IB_DESIGNABLE
  */
 - (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
 
+- (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier;
+
 /**
  Returns a reusable calendar cell object located by its identifier.
 
